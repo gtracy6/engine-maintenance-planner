@@ -1,0 +1,15 @@
+# CFM CFM56-5B / 7B — common on A320ceo / B737NG
+# High shop demand, earlier intervention thresholds, higher cost per cycle.
+name: CFM56
+max_cycles_between_shop: 20000
+rul_trigger: 0.12         # intervene earlier due to high shop demand
+cycle_trigger: 17000
+default_shop_visit_duration: 3
+maintenance_base_cost: 550000
+maintenance_cost_per_cycle: 95
+delay_risk_multiplier:
+  high: 2.2
+  medium: 1.5
+  low: 1.1
+score_threshold_high: 8
+score_threshold_medium: 4

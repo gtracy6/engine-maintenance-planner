@@ -1,0 +1,21 @@
+# High-demand scenario — 20-30 % uplift across all fleets.
+# Useful for sensitivity analysis under peak-growth assumptions.
+name: high_demand
+description: "Elevated demand across all fleets (+20-30%) for stress testing"
+
+fleets:
+  ABC:
+    annual_utilisation: 1800
+    utilisation_level: high
+    #                Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec
+    monthly_demand: [10,  10,  11,  13,  14,  15,  15,  14,  13,  11,  9,   8]
+
+  BCA:
+    annual_utilisation: 1300
+    utilisation_level: high
+    monthly_demand:   [4,   4,   5,   6,   7,   8,   8,   7,   6,   5,   4,   5]
+
+  CBA:
+    annual_utilisation: 650
+    utilisation_level: medium
+    monthly_demand:   [2,   2,   3,   3,   3,   4,   4,   4,   3,   3,   2,   3]

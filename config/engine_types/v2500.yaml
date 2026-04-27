@@ -1,0 +1,15 @@
+# IAE V2500 — common on A320ceo / A321ceo
+# Values match original hard-coded defaults so existing tests are unaffected.
+name: V2500
+max_cycles_between_shop: 20000
+rul_trigger: 0.10        # send to shop when RUL ≤ 10 %
+cycle_trigger: 18000     # send to shop when cycles_since_shop ≥ 18 000
+default_shop_visit_duration: 2
+maintenance_base_cost: 500000
+maintenance_cost_per_cycle: 80
+delay_risk_multiplier:
+  high: 2.0
+  medium: 1.4
+  low: 1.1
+score_threshold_high: 8   # ≥ 8 → send_to_maintenance
+score_threshold_medium: 4  # ≥ 4 → monitor_or_plan

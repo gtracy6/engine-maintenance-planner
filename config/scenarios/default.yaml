@@ -1,0 +1,20 @@
+# Default fleet scenario — mirrors original hard-coded values exactly.
+name: default
+description: "Baseline three-fleet scenario (ABC high-util, BCA medium, CBA low)"
+
+fleets:
+  ABC:
+    annual_utilisation: 1500   # cycles / year
+    utilisation_level: high
+    #                Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec
+    monthly_demand: [8,   8,   9,   10,  11,  12,  12,  11,  10,  9,   7,   6]
+
+  BCA:
+    annual_utilisation: 1000
+    utilisation_level: medium
+    monthly_demand:   [3,   3,   4,   4,   5,   6,   6,   5,   4,   4,   3,   4]
+
+  CBA:
+    annual_utilisation: 500
+    utilisation_level: low
+    monthly_demand:   [1,   1,   2,   2,   2,   3,   3,   3,   2,   2,   1,   2]
